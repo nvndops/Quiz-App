@@ -1,0 +1,51 @@
+/* Home.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #121212; /* Dark background */
+    color: #e0e0e0; /* Light gray text color for contrast */
+    padding: 20px;
+}
+
+.heading {
+    color: #bb86fc; /* Light purple for a touch of color */
+    font-size: 2.5rem; /* Slightly larger for emphasis */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #e0e0e0; /* Light gray text for better readability */
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 600px; /* Max width for larger screens */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.heading, .description {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Button styles for dark theme */
+.startButton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #121212; /* Dark background for button text */
+    background-color: #bb86fc; /* Light purple button */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.startButton:hover {
+    background-color: #9c66cc; /* Darker purple on hover */
+}
